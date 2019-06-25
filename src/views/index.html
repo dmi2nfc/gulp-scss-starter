@@ -27,6 +27,22 @@
     </head>
     <body>
         @@include("../blocks/modules/header/header.html")
+        @@include("../blocks/modules/menu/menu.html")
+        Test Test Test
+        
+         <header data-anijs="if: click, do: flipInY animated">
+        header
+    </header>
+    <nav data-anijs="if: scroll, on: window, do: swing animated, to: footer">
+        nav
+    </nav>
+    <div id="main" data-anijs="if: mouseover, on: body, do: swing animated">
+        if: load, on: window, do: swing animated
+    </div>
+    <footer>
+        footer
+    </footer>
+        
         @@include("../blocks/modules/footer/footer.html")
         <script src="../js/main.js"></script>
         <script src="../js/vendor.js"></script>
